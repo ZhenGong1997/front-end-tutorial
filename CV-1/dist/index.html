@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 修改为淘宝业界的viewport，阻止用户双指放大 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <title>简单的简历</title>
+</head>
+<body>
+    <style id="style"></style>
+    <div id="html"></div>
+    <script src="/index.de158e3a.js"></script>
+    <div id="div1-wrapper">
+        <div id="div1"></div>
+    </div>
+
+    <style>* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#html {
+  word-break: break-all;
+}
+
+#div1 {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+#div1:before, #div1:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+@media (width <= 500px) {
+  #html {
+    height: 60vh;
+    overflow: hidden;
+  }
+
+  #div1-wrapper {
+    height: 40vh;
+  }
+
+  #div1 {
+    position: relative;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+</style>
+<script src="/CV-1.59712999.js"></script></body>
+</html>
