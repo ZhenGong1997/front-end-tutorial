@@ -1,0 +1,40 @@
+*{margin:0; padding:0; box-sizing: border-box;}
+#html{
+    word-break:break-all;
+}
+#div1{
+    position:fixed;
+    right:20px;
+    top:20px;
+}
+
+/* 这是伪元素，利用css添加元素，不用自己写更多的div */
+#div1::before{
+    content:"";   
+    display:block;
+    position:absolute; 
+}
+
+#div1::after{
+    content:"";
+    display:block;
+    position:absolute;
+}
+
+@media(max-width:500px){
+    #html{
+        height:60vh;
+        overflow:hidden;
+    }
+    
+    #div1-wrapper{
+        height:40vh;
+        
+    }   
+     #div1{
+        position:relative;
+        top:15%;
+        transform:translateX(-50%);
+        left:50%;
+    }
+}
